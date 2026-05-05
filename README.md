@@ -1,7 +1,7 @@
 # Webový projekt - online shop airsoftu
 
 ## Odkazy:
-- [Návrh ve Figmě](https://www.figma.com/design/7MkjfA7xhDboaq8QGBEJEZ/WebProject?node-id=0-1&p=f&t=JwqLKAgY2i07KZ2T-0)
+- [Návrh ve Figmě](https://www.figma.com/design/DADe1v2P5TEX1SvkDxAyx2/AirsoftShop?node-id=0-1&t=9jxwuxSVqrNgURrI-1)
 - [GitHub Pages](https://pslib-cz.github.io/2025-p2b-web-project-Tomiis737/)
 
 Na stránce půjde "koupit" airsoftové vybavení a přečíst si něco málo o sportu jako takovém. Zároveň bude obsahovat mapu airsofotvých hřiští v okolí Liberce (prozatím plán podle času).
