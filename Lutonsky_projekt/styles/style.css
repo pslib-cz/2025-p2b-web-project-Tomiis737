@@ -1,0 +1,33 @@
+html{
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    background-image: url(../images/Soldiers.jpg);
+    background-repeat: no-repeat;
+}
+
+p{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.header_company_logo{
+    display: inline-block;
+    max-width: 120px;
+    max-height: 120px;
+    border-radius: 100%;
+    overflow: hidden;
+    background-color: white;
+}
+
+.company_logo{
+    display: block;
+    max-width: 70%;
+    max-height: 70%;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+}
