@@ -6,6 +6,10 @@ html{
 body{
     background-image: url(../images/Soldiers.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
 }
 
 p{
@@ -14,20 +18,29 @@ p{
     margin: 0;
 }
 
+.company_logoname{
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
 .header_company_logo{
-    display: inline-block;
-    max-width: 120px;
-    max-height: 120px;
+    display: block;
+    aspect-ratio: 1/1;
+    height: 50px;
+    box-sizing: border-box;
     border-radius: 100%;
     overflow: hidden;
     background-color: white;
+    background-image: url(../images/favicon_shooter.svg);
+    background-size: 76%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    background-origin: padding-box;
+    border: hidden 10px;
 }
 
-.company_logo{
-    display: block;
-    max-width: 70%;
-    max-height: 70%;
-    margin: 0;
-    padding: 0;
-    object-fit: cover;
+.company_name{
+
 }
