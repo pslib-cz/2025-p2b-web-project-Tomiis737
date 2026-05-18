@@ -6,10 +6,11 @@ html{
 body{
     background-image: url(../images/Soldiers.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
+    background-size: 100% 100%;
+}
 
+main{
+    padding-top: 5rem;
 }
 
 p{
@@ -18,16 +19,25 @@ p{
     margin: 0;
 }
 
-.company_logoname{
-    display: inline;
-    padding: 0;
-    margin: 0;
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0em;;
 }
 
-.header_company_logo{
+.company__logoname{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: white;
+}
+
+.header__company_logo{
     display: block;
+    flex-shrink: 0;
     aspect-ratio: 1/1;
-    height: 50px;
+    height: 40px;
     box-sizing: border-box;
     border-radius: 100%;
     overflow: hidden;
@@ -41,6 +51,89 @@ p{
     border: hidden 10px;
 }
 
-.company_name{
+.company__name{
+    display: inline-block;
+    text-decoration: none;
+    align-content: center;
+    padding: 0em 0em 0em 0.3em;
+}
+
+.nav__icons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 1.5em;
+}
+
+.nav__item{
+   list-style-type: none;
+   display: flex;
+}
+
+.nav__item::before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border-radius: 0.3em ;
+    overflow: hidden;
+    background-size: 76%;
+    background-position: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    background-origin: padding-box;
+    border: hidden 10px;
+}
+
+.nav__item--home::before{
+    background-image: url(../images/favicon_home.svg);
+}
+
+.nav__item--weapons::before{
+    background-image: url(../images/favicon_gun.svg);
+}
+
+.nav__item--clothing::before{
+    background-image: url(../images/favicon_pants.svg);
+}
+
+.nav__item--contacts::before{
+    background-image: url(../images/favicon_phone.svg);
+}
+
+.icon__link{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 0em 0em 0em 0.3em;
+}
+
+.weapon__headline{
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+.about{
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 1rem;
+    line-height: 1.6;
+}
+
+.about__header{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.about__text{
 
 }
