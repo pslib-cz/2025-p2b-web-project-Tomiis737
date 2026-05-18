@@ -6,11 +6,9 @@ html{
 body{
     background-image: url(../images/Soldiers.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-
-main{
-    padding-top: 5rem;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 p{
@@ -22,7 +20,19 @@ p{
 .header{
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem 0em;;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 0.8rem 0;
+    background-color: rgba(20, 20, 20, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
 }
 
 .company__logoname{
@@ -30,7 +40,7 @@ p{
     padding: 0;
     margin: 0;
     text-decoration: none;
-    color: white;
+    color: white;;
 }
 
 .header__company_logo{
@@ -121,19 +131,159 @@ p{
 
 .about{
     padding: 2rem;
-    max-width: 1200px;
-    margin: 2rem auto;
-    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 1950px;
+    margin: 2rem 2rem;
+    background-color: rgba(0, 0, 0, 0.75);
     border-radius: 1rem;
     line-height: 1.6;
+    justify-self: center;
 }
 
 .about__header{
     margin-top: 0;
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
+    justify-self: center;
 }
 
 .about__text{
+    font-size: 1.1rem;
+}
 
+.card__gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.weapon__card{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    max-height: 600px;
+    margin: 1rem;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.card__header{
+    width: 100%;
+    height: 200px;
+}
+
+.card__image{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.weapon__image{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card__label{
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+.card__description{
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.card__footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: auto;
+}
+
+.card__price{
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+}
+
+.card__link{
+    display: inline-block;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 0.3em;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    margin-left: auto;
+
+}
+
+.footer{
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-top: 2px solid white;
+}
+
+.footer__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+    gap: 2rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.footer__section{
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer__heading{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.footer__text{
+    font-size: 0.95em;
+    line-height: 1.8;
+    margin: 0.5rem 0;
+    display: block;
+}
+
+.footer__link{
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+.footer__link:hover{
+    color: #ccc;
+}
+
+.footer__bottom{
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer__copyright{
+    font-size: 0.9em;
+    display: block;
+    margin: 0;
 }
