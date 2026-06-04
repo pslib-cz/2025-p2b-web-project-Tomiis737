@@ -1,14 +1,29 @@
+:root{
+    --site-header-height: 64px;
+}
+
 html{
+    height: 100%;
     color: white;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-image: url(../images/Soldiers.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+}
+
+main{
+    flex: 1 1 auto;
+    padding-top: var(--site-header-height);
+    box-sizing: border-box;
 }
 
 p{
@@ -27,12 +42,14 @@ p{
     right: 0;
     width: 100%;
     padding: 0.8rem 0;
+    min-height: var(--site-header-height);
     background-color: rgba(20, 20, 20, 0.4);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.14);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
+    z-index: 999;
 }
 
 .company__logoname{
@@ -133,7 +150,7 @@ p{
     position: relative;
     overflow: hidden;
     max-width: 1200px;
-    margin: 2rem auto;
+    margin: var(--site-header-height) auto var(--site-header-height);
     border-radius: 1rem;
     min-height: 320px;
     background-color: rgba(0, 0, 0, 0.65);
@@ -263,11 +280,12 @@ p{
 .about{
     padding: 2rem;
     max-width: 1950px;
-    margin: 2rem 2rem;
+    margin: var(--site-header-height) 2rem;
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 1rem;
     line-height: 1.6;
     justify-self: center;
+    scroll-margin-top: var(--site-header-height);
 }
 
 .about__header{
@@ -283,9 +301,44 @@ p{
 
 .card__gallery{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem;
+    padding: 1rem;
+    scroll-behavior: smooth;
+    margin-top: var(--site-header-height);
+    margin-bottom: var(--site-header-height);
+}
+
+/* Themed scrollbar for card galleries */
+.card__gallery::-webkit-scrollbar{
+    height: 12px;
+}
+.card__gallery::-webkit-scrollbar-track{
+    background: rgba(255,255,255,0.03);
+    border-radius: 8px;
+}
+.card__gallery::-webkit-scrollbar-thumb{
+    background: linear-gradient(90deg, rgba(255,255,255,0.08), rgba(255,255,255,0.18));
+    border-radius: 8px;
+    border: 2px solid rgba(0,0,0,0.1);
+}
+
+/* Firefox */
+.card__gallery{
+    scrollbar-color: rgba(255,255,255,0.18) rgba(255,255,255,0.03);
+    scrollbar-width: thin;
+}
+
+@media (min-width: 900px){
+    .card__gallery{
+        justify-content: center;
+        max-width: 1200px;
+        margin: var(--site-header-height) auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }
 
 .weapon__card{
@@ -293,7 +346,8 @@ p{
     flex-direction: column;
     width: 300px;
     max-height: 600px;
-    margin: 1rem;
+    margin: 0;
+    flex: 0 0 300px;
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 1rem;
     padding: 1rem;
@@ -361,7 +415,7 @@ p{
     background-color: rgba(0, 0, 0, 0.85);
     color: white;
     padding: 2rem;
-    margin-top: 3rem;
+    margin-top: 0;
     border-top: 2px solid white;
 }
 
