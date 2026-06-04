@@ -27,9 +27,38 @@
     </header>
     <main>
         <div class="weapon__carousel">
-            <p class="weapon__headline">Žhavé nabídky</p>
+            <div class="carousel__slides">
+                <article class="carousel__slide active">
+                    <div class="carousel__slide-content">
+                        <p class="carousel__eyebrow">Žhavé nabídky</p>
+                        <h2 class="carousel__title">AK-47 se silným zásobníkem</h2>
+                        <p class="carousel__text">Perfektní replika pro nováčky i zkušené hráče, kteří hledají autentický styl střelby a spolehlivý chod.</p>
+                    </div>
+                </article>
+                <article class="carousel__slide">
+                    <div class="carousel__slide-content">
+                        <p class="carousel__eyebrow">Výprodej</p>
+                        <h2 class="carousel__title">MK18 - lehká a přesná</h2>
+                        <p class="carousel__text">Kompaktní puška s hladkým spouštěním, rychlou kontrolou a moderním designem pro dynamické airsoftové operace.</p>
+                    </div>
+                </article>
+                <article class="carousel__slide">
+                    <div class="carousel__slide-content">
+                        <p class="carousel__eyebrow">Nejlepší cena</p>
+                        <h2 class="carousel__title">Barret MRAD pro dlouhý dosah</h2>
+                        <p class="carousel__text">Samonabíjecí odstřelovač, který vyniká stabilitou a přesností na velké vzdálenosti. Ideální pro náročné hráče, kteří chtějí dominovat na hřišti.</p>
+                    </div>
+                </article>
+            </div>
+            <button class="carousel__button carousel__button--prev" type="button" aria-label="Předchozí">‹</button>
+            <button class="carousel__button carousel__button--next" type="button" aria-label="Další">›</button>
+            <div class="carousel__indicators">
+                <button class="carousel__indicator active" type="button" aria-label="Slide 1"></button>
+                <button class="carousel__indicator" type="button" aria-label="Slide 2"></button>
+                <button class="carousel__indicator" type="button" aria-label="Slide 3"></button>
+            </div>
         </div>
-        <div class="about" aria-labelledby="about-heading" id="about">
+        <div class="about" id="about">
             <h2 class="about__header" id="about-heading">O nás</h2>
             <p class="about__text">Jsme internetový obchod specializovaný na airsoftové zbraně a vybavení. Nabízíme široký výběr replik, doplňků, oblečení a ochranných pomůcek. Vybíráme produkty od prověřených značek s důrazem na kvalitu a bezpečnost. Poskytujeme odborné poradenství a servis pro každou zbraň i příslušenství. Pravidelně aktualizujeme skladové zásoby a přidáváme akční nabídky. Nabízíme rychlé doručení po celé republice i možnost osobního odběru. Zajišťujeme bezpečné a pohodlné platební metody včetně online plateb. Naši zaměstnanci se aktivně účastní airsoftových akcí a testují vybavení. Ke každému nákupu přistupujeme zodpovědně — reklamace a záruka jsou samozřejmostí. Sledujte nás na sociálních sítích pro novinky, tipy a výprodeje.</p>
         </div>
@@ -41,7 +70,7 @@
                 <div class="card__body">
                     <p class="card__label">AK-47</p>
                     <div class="card__description">
-                        <p class="card__text">Airsoftová replika AK-47 nabízí spolehlivý výkon, realistický chod a pevnou konstrukci pro taktické hry.</p>
+                        <p class="card__text">Spolehlivá AK-47 pro stabilní střelbu v každé bitvě.</p>
                     </div>
                 </div>
                 <div class="card__footer">
@@ -56,7 +85,7 @@
                 <div class="card__body">
                     <p class="card__label">MK18</p>
                     <div class="card__description">
-                        <p class="card__text">Airsoftová replika MK18 nabízí spolehlivý výkon, realistický chod a pevnou konstrukci pro taktické hry.</p>
+                        <p class="card__text">Kompaktní MK18 se skvělou ovladatelností a rychlou reakcí pro krátké boje.</p>
                     </div>
                 </div>
                 <div class="card__footer">
@@ -71,7 +100,7 @@
                 <div class="card__body">
                     <p class="card__label">SA-F03 FLEX</p>
                     <div class="card__description">
-                        <p class="card__text">Airsoftová replika SA-F03 FLEX nabízí spolehlivý výkon, realistický chod a pevnou konstrukci pro taktické hry.</p>
+                        <p class="card__text">SA-F03 FLEX je robustní replika s nastavitelností a pevnou konstrukcí pro tvrdé nasazení.</p>
                     </div>
                 </div>
                 <div class="card__footer">
@@ -86,7 +115,7 @@
                 <div class="card__body">
                     <p class="card__label">Winchester SXP Extreme Defender</p>
                     <div class="card__description">
-                        <p class="card__text">Airsoftová replika Winchester SXP Extreme Defender nabízí spolehlivý výkon, realistický chod a pevnou konstrukci pro taktické hry.</p>
+                        <p class="card__text">Brokovnice Winchester SXP dodá silný zásah a autentický pocit při každém výstřelu.</p>
                     </div>
                 </div>
                 <div class="card__footer">
@@ -101,7 +130,7 @@
                 <div class="card__body">
                     <p class="card__label">FN P90</p>
                     <div class="card__description">
-                        <p class="card__text">Airsoftová replika FN P90 nabízí spolehlivý výkon, realistický chod a pevnou konstrukci pro taktické hry.</p>
+                        <p class="card__text">P90 je rychlá, nenápadná a perfektní pro mobilní týmové mise s intenzivním tempem.</p>
                     </div>
                 </div>
                 <div class="card__footer">
@@ -116,7 +145,7 @@
                 <div class="card__body">
                     <p class="card__label">Barret MRAD</p>
                     <div class="card__description">
-                        <p class="card__text">Airsoftová replika Barret MRAD nabízí spolehlivý výkon, realistický chod a pevnou konstrukci pro taktické hry.</p>
+                        <p class="card__text">Barret MRAD je přesná volba pro odstřelovače, kteří hledají dlouhý dosah, stabilitu a silný dopad.</p>
                     </div>
                 </div>
                 <div class="card__footer">
@@ -126,6 +155,7 @@
             </div>
         </div>
     </main>
+    <script src="./carousel.js"></script>
     <footer class="footer" id="contacts">
         <div class="footer__content">
             <div class="footer__section">
