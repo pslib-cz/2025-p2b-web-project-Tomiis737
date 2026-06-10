@@ -1,5 +1,26 @@
 /* Generic slider initializer for carousels and horizontal card galleries */
 (function(){
+    // Highlight the current page in the header navigation
+    const navItems = document.querySelectorAll('.nav__icons .nav__item');
+    if(navItems.length){
+        const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+        const activeMap = {
+            'index.html': '.nav__item--home',
+            'weapons.html': '.nav__item--weapons',
+            'clothing.html': '.nav__item--clothing'
+        };
+
+        navItems.forEach(item => item.classList.remove('nav__item--active'));
+
+        const selector = activeMap[currentPath] || '.nav__item--home';
+        const activeItem = document.querySelector(selector);
+        if(activeItem){
+            activeItem.classList.add('nav__item--active');
+            const activeLink = activeItem.querySelector('a');
+            if(activeLink) activeLink.setAttribute('aria-current', 'page');
+        }
+    }
+
     // Carousel slides (hero) initialization — only run if present
     const slides = document.querySelectorAll('.carousel__slide');
     if(slides.length){

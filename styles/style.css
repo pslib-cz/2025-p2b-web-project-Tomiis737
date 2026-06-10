@@ -97,6 +97,34 @@ p{
 .nav__item{
    list-style-type: none;
    display: flex;
+   position: relative;
+}
+
+.nav__item::after{
+    content: "";
+    position: absolute;
+    left: 0.3em;
+    right: 0;
+    bottom: -4px;
+    height: 2px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.95), rgba(255,255,255,0.35));
+    transform: scaleX(0);
+    transform-origin: left;
+    opacity: 0;
+    transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.nav__item--active::after,
+.nav__item:hover::after{
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+.nav__item--active .icon__link,
+.nav__item:hover .icon__link{
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255,255,255,0.18);
 }
 
 .nav__item::before{
@@ -137,6 +165,7 @@ p{
     text-decoration: none;
     color: white;
     padding: 0em 0em 0em 0.3em;
+    transition: color 0.25s ease, text-shadow 0.25s ease;
 }
 
 .weapon__headline{
@@ -284,7 +313,6 @@ p{
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 1rem;
     line-height: 1.6;
-    justify-self: center;
     scroll-margin-top: var(--site-header-height);
 }
 
@@ -292,7 +320,6 @@ p{
     margin-top: 0;
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
-    justify-self: center;
 }
 
 .about__text{
