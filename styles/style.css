@@ -13,7 +13,7 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url(../images/Soldiers.jpg);
+    background-image: url(../images/Soldiers.avif);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -220,9 +220,9 @@ p{
     z-index: 0;
 }
 
-.carousel__slide:nth-child(1)::before{background-image: url(../images/AK_Airsoft.png);}
-.carousel__slide:nth-child(2)::before{background-image: url(../images/AR_Airsoft.png);}
-.carousel__slide:nth-child(3)::before{background-image: url(../images/Sniper_Airsoft.png);}
+.carousel__slide:nth-child(1)::before{background-image: url(../images/AK_Airsoft.avif);}
+.carousel__slide:nth-child(2)::before{background-image: url(../images/AR_Airsoft.avif);}
+.carousel__slide:nth-child(3)::before{background-image: url(../images/Sniper_Airsoft.avif);}
 
 .carousel__slide-content{
     position: relative;
